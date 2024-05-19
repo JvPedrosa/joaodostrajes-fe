@@ -14,7 +14,6 @@ export const HeroLeft = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 24px;
-  padding-left: 176px;
   line-height: 1.1;
 
   h2 {
@@ -60,7 +59,6 @@ export const HeroRight = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
   height: 100%;
 
   img {
