@@ -8,6 +8,7 @@ import {
 } from "./styles";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "../../assets/logo.png";
 
 export const Navbar = () => {
   const [menu, setMenu] = useState("home");
@@ -16,7 +17,7 @@ export const Navbar = () => {
     <NavContainer>
       <Link to="/">
         <NavLogo>
-          <img src={require("../../assets/logo.png")} alt="João dos Trajes" />
+          <img src={logo} alt="João dos Trajes" />
           <p>João dos Trajes</p>
         </NavLogo>
       </Link>
