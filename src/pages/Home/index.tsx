@@ -1,4 +1,5 @@
 import { Hero } from "../../components/Hero";
+import { Offers } from "../../components/Offers";
 import { Popular } from "../../components/Popular";
 
 export const Home = () => {
@@ -6,6 +7,7 @@ export const Home = () => {
     <div>
       <Hero />
       <Popular />
+      <Offers />
     </div>
   );
 };
