@@ -1,10 +1,14 @@
+import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 import { Navbar } from "./components/Navbar";
+import { Router } from "./app/router";
 function App() {
   return (
     <div>
-      <Navbar />
-      <h1>João dos Trajes</h1>
+      <BrowserRouter>
+        <Navbar />
+        <Router />
+      </BrowserRouter>
     </div>
   );
 }
