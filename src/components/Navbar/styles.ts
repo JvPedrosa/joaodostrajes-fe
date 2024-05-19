@@ -19,7 +19,7 @@ export const NavLogo = styled.div`
 
   p {
     color: #171717;
-    font-size: 32px;
+    font-size: 16px;
     font-weight: 600;
   }
 `;

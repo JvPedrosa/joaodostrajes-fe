@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const PopularContainer = styled.div`
+export const NewCollectionsContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,7 +20,7 @@ export const PopularContainer = styled.div`
   }
 `;
 
-export const PopularItem = styled.div`
+export const Collections = styled.div`
   margin: 48px 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;

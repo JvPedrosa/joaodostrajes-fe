@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ItemContainer = styled.div`
-  width: 360px;
+  height: 100%;
 
   p {
     margin: 8px 0;
@@ -9,7 +9,6 @@ export const ItemContainer = styled.div`
 
   img {
     width: 100%;
-    height: 100%;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 1px 3px -2px black;

@@ -1,4 +1,5 @@
 import { Hero } from "../../components/Hero";
+import { NewCollections } from "../../components/NewCollections";
 import { Offers } from "../../components/Offers";
 import { Popular } from "../../components/Popular";
 
@@ -8,6 +9,7 @@ export const Home = () => {
       <Hero />
       <Popular />
       <Offers />
+      <NewCollections />
     </div>
   );
 };

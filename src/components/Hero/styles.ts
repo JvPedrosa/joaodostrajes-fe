@@ -59,9 +59,9 @@ export const HeroRight = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 80vh;
 
   img {
-    height: 1024px;
+    height: 100%;
   }
 `;

@@ -48,7 +48,7 @@ export const OffersRight = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding-top: 24px;
+  padding-top: 48px;
 
   img {
     height: 100%;
