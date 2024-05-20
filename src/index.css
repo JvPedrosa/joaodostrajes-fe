@@ -21,3 +21,22 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+button {
+  border: 1px solid #7a7a7a;
+  outline: none;
+  cursor: pointer;
+  padding: 8px 20px;
+  color: #515151;
+  background-color: white;
+  border-radius: 80px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
