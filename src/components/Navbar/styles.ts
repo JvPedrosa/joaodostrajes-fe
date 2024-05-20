@@ -61,19 +61,6 @@ export const NavLoginCart = styled.div`
     height: 36px;
   }
 
-  button {
-    width: 160px;
-    height: 56px;
-    outline: none;
-    border: 1px solid #7a7a7a;
-    border-radius: 80px;
-    color: #515151;
-    font-size: 16px;
-    font-weight: 500;
-    background-color: white;
-    cursor: pointer;
-  }
-
   button:active {
     background-color: #f3f3f3;
   }
