@@ -55,6 +55,8 @@ export const NewsLetterContainer = styled.div`
       outline: none;
       border: 1px solid #7a7a7a;
       font-weight: 500;
+      display: flex;
+      justify-content: center;
     }
   }
 `;
