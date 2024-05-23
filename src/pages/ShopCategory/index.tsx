@@ -35,15 +35,7 @@ export const ShopCategory = ({
       <ShopCategoryProducts>
         {all_products.map((item: ItemProps) => {
           if (item.category === category) {
-            return (
-              <Item
-                key={item.id}
-                name={item.name}
-                image={item.image}
-                new_price={item.new_price}
-                old_price={item.old_price}
-              />
-            );
+            return <Item key={item.id} item={item} />;
           }
         })}
       </ShopCategoryProducts>

@@ -9,13 +9,7 @@ export const NewCollections = () => {
       <hr />
       <Collections>
         {data_product.map((item) => (
-          <Item
-            key={item.id}
-            name={item.name}
-            image={item.image}
-            new_price={item.new_price}
-            old_price={item.old_price}
-          />
+          <Item key={item.id} item={item} />
         ))}
       </Collections>
     </NewCollectionsContainer>

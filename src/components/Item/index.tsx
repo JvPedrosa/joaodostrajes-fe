@@ -1,33 +1,27 @@
+import { Link } from "react-router-dom";
 import {
   ItemContainer,
   ItemPriceNew,
   ItemPriceOld,
   ItemPrices,
 } from "./styles";
+import { ItemProps } from "../../types";
 
-export const Item = ({
-  image,
-  name,
-  new_price,
-  old_price,
-}: {
-  image: string;
-  name: string;
-  new_price: number;
-  old_price: number;
-}) => {
+export const Item = ({ item }: { item: ItemProps }) => {
   return (
     <ItemContainer>
-      <img src={image} alt="Item" />
-      <p>{name}</p>
-      <ItemPrices>
-        <ItemPriceNew>
-          <p>R$ {new_price}</p>
-        </ItemPriceNew>
-        <ItemPriceOld>
-          <p>R$ {old_price}</p>
-        </ItemPriceOld>
-      </ItemPrices>
+      <Link to={`/product/${item.id}`} style={{ textDecoration: "none" }}>
+        <img src={item.image} alt="Item" />
+        <p>{item.name}</p>
+        <ItemPrices>
+          <ItemPriceNew>
+            <p>R$ {item.new_price}</p>
+          </ItemPriceNew>
+          <ItemPriceOld>
+            <p>R$ {item.old_price}</p>
+          </ItemPriceOld>
+        </ItemPrices>
+      </Link>
     </ItemContainer>
   );
 };
