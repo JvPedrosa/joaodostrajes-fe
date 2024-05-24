@@ -64,6 +64,10 @@ export const LoginSignupLogin = styled.div`
     color: #ff4141;
     font-weight: 600;
     cursor: pointer;
+
+    &:hover {
+      font-weight: 700;
+    }
   }
 `;
 
@@ -75,4 +79,11 @@ export const LoginSignupAgree = styled.div`
   color: #5c5c5c;
   font-size: 18px;
   font-weight: 500;
+
+  input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #ff4141;
+    cursor: pointer;
+  }
 `;

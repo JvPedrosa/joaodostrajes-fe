@@ -30,7 +30,7 @@ export const LoginSignup = () => {
           <p>
             Concordo com os{" "}
             <a href="https://my-portfolio-liart-one-93.vercel.app/">
-              Termos de Uso e Política de Privacidade
+              Termos de Uso
             </a>
           </p>
         </LoginSignupAgree>
