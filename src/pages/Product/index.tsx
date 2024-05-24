@@ -2,7 +2,10 @@ import { useContext } from "react";
 import { ShopContext } from "../../context/ShopContext";
 import { useParams } from "react-router-dom";
 import { ItemProps } from "../../types";
-import { Breadcrum } from "../../components/Breadcrums";
+import { Breadcrum } from "../../components/Breadcrum";
+import { ProductDisplay } from "../../components/ProductDisplay";
+import { DescriptionBox } from "../../components/DescriptionBox";
+import { RelatedProducts } from "../../components/RelatedProducts";
 
 export const Product = () => {
   const context = useContext(ShopContext);
@@ -22,8 +25,13 @@ export const Product = () => {
   }
 
   return (
-    <div>
-      <Breadcrum product={product}></Breadcrum>
+    <div
+      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+    >
+      <Breadcrum product={product} />
+      <ProductDisplay product={product} />
+      <DescriptionBox />
+      <RelatedProducts />
     </div>
   );
 };

@@ -11,7 +11,11 @@ export const Item = ({ item }: { item: ItemProps }) => {
   return (
     <ItemContainer>
       <Link to={`/produto/${item.id}`} style={{ textDecoration: "none" }}>
-        <img src={item.image} alt="Item" />
+        <img
+          src={item.image}
+          onClick={() => window.scrollTo(0, 0)}
+          alt="Item"
+        />
         <p>{item.name}</p>
         <ItemPrices>
           <ItemPriceNew>
