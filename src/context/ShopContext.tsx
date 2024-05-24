@@ -1,6 +1,6 @@
 import { createContext } from "react";
 import all_products from "../data/products";
-import { ItemProps } from "../types/index.js";
+import { ItemProps } from "@/types";
 
 interface ShopContextType {
   all_products: ItemProps[];

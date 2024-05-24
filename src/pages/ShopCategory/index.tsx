@@ -7,7 +7,7 @@ import {
 } from "./styles";
 import { ShopContext } from "../../context/ShopContext";
 import { ArrowDropDown } from "@mui/icons-material";
-import { ItemProps } from "../../types";
+import { ItemProps } from "@/types";
 import { Item } from "../../components/Item";
 
 export const ShopCategory = ({

@@ -5,7 +5,7 @@ import {
   ItemPriceOld,
   ItemPrices,
 } from "./styles";
-import { ItemProps } from "../../types";
+import { ItemProps } from "@/types";
 
 export const Item = ({ item }: { item: ItemProps }) => {
   return (

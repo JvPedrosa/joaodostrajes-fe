@@ -1,6 +1,6 @@
 import { RelatedProductsContainer, RelatedProductsItem } from "./styles";
 import data_product from "../../../../data/products";
-import { ItemProps } from "../../../../types";
+import { ItemProps } from "@/types";
 import { Item } from "../../../../components/Item";
 export const RelatedProducts = () => {
   return (
