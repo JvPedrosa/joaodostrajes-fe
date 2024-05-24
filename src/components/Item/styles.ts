@@ -8,7 +8,8 @@ export const ItemContainer = styled.div`
   }
 
   img {
-    width: 100%;
+    width: 256px;
+    height: 256px;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 1px 3px -2px black;

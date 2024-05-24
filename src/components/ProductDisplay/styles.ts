@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const ProductDisplayContainer = styled.div`
   display: flex;
   width: 90%;
+  margin-bottom: 64px;
 `;
 
 export const ProductDisplayLeft = styled.div`
