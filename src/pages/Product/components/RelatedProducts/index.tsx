@@ -1,7 +1,7 @@
 import { RelatedProductsContainer, RelatedProductsItem } from "./styles";
-import data_product from "../../data/products";
-import { ItemProps } from "../../types";
-import { Item } from "../Item";
+import data_product from "../../../../data/products";
+import { ItemProps } from "../../../../types";
+import { Item } from "../../../../components/Item";
 export const RelatedProducts = () => {
   return (
     <RelatedProductsContainer>

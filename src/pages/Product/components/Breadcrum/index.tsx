@@ -1,5 +1,5 @@
 import { BreadcrumContainer } from "./styles";
-import { ItemProps } from "../../types";
+import { ItemProps } from "../../../../types";
 import { KeyboardArrowRight } from "@mui/icons-material";
 
 export const Breadcrum = ({ product }: { product: ItemProps }) => {

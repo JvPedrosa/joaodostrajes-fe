@@ -1,5 +1,5 @@
 import { StarBorder, StarRate } from "@mui/icons-material";
-import { ItemProps } from "../../types";
+import { ItemProps } from "../../../../types";
 import {
   ProductDisplayCategory,
   ProductDisplayContainer,

@@ -1,6 +1,6 @@
 import { PopularContainer, PopularItem } from "./styles";
-import data_product from "../../data/products";
-import { Item } from "../Item";
+import data_product from "../../../../data/products";
+import { Item } from "../../../../components/Item";
 
 export const Popular = () => {
   return (

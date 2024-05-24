@@ -6,7 +6,7 @@ import {
   HeroLeft,
   HeroRight,
 } from "./styles";
-import pure_intent_masc from "../../assets/pure-intent-masc.png";
+import pure_intent_masc from "../../../../assets/pure-intent-masc.png";
 
 export const Hero = () => {
   return (
