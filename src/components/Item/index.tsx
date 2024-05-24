@@ -10,7 +10,7 @@ import { ItemProps } from "../../types";
 export const Item = ({ item }: { item: ItemProps }) => {
   return (
     <ItemContainer>
-      <Link to={`/product/${item.id}`} style={{ textDecoration: "none" }}>
+      <Link to={`/produto/${item.id}`} style={{ textDecoration: "none" }}>
         <img src={item.image} alt="Item" />
         <p>{item.name}</p>
         <ItemPrices>
