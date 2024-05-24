@@ -30,6 +30,8 @@ export const OffersLeft = styled.div`
   }
 
   button {
+    display: flex;
+    justify-content: center;
     width: 280px;
     height: 72px;
     border-radius: 36px;
