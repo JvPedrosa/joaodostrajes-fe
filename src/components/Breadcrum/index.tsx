@@ -1,16 +1,17 @@
-import { ArrowDownward } from "@mui/icons-material";
 import { BreadcrumContainer } from "./styles";
 import { ItemProps } from "../../types";
+import { KeyboardArrowRight } from "@mui/icons-material";
 
 export const Breadcrum = ({ product }: { product: ItemProps }) => {
   return (
     <BreadcrumContainer>
       HOME
-      <ArrowDownward />
+      <KeyboardArrowRight />
       SHOP
-      <ArrowDownward />
+      <KeyboardArrowRight />
       {product.category}
-      <ArrowDownward />
+      <KeyboardArrowRight />
+      {product.name}
     </BreadcrumContainer>
   );
 };
