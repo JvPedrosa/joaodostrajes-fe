@@ -55,17 +55,16 @@ export const CartItemsFormat = styled.div`
 export const CartItemsDown = styled.div`
   display: flex;
   margin: 100px 0;
+  gap: 10%;
 `;
 
 export const CartItemsTotal = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
-  margin-right: 200px;
   gap: 40px;
 
   button {
-    width: 256px;
     height: 56px;
     border: none;
     background-color: #ff5a5a;
@@ -106,7 +105,6 @@ export const CartItemsPromoBox = styled.div`
     outline: none;
     background: transparent;
     font-size: 16px;
-    width: 330px;
     height: 50px;
   }
 
