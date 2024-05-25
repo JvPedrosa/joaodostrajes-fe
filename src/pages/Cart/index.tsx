@@ -1,7 +1,9 @@
+import { CartItems } from "./components/CartItems";
+
 export const Cart = () => {
   return (
     <div>
-      <h1>carrinho</h1>
+      <CartItems />
     </div>
   );
 };

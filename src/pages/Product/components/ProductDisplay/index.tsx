@@ -15,8 +15,17 @@ import {
   ProductDisplaySizeList,
   ProductDisplayStars,
 } from "./styles";
+import { useContext } from "react";
+import { ShopContext } from "../../../../context/ShopContext";
 
 export const ProductDisplay = ({ product }: { product: ItemProps }) => {
+  const shopContext = useContext(ShopContext);
+
+  if (!shopContext) {
+    throw new Error("ShopContext must be used within a ShopContextProvider");
+  }
+
+  const { addToCart } = shopContext;
   return (
     <ProductDisplayContainer>
       <ProductDisplayLeft>
@@ -62,7 +71,9 @@ export const ProductDisplay = ({ product }: { product: ItemProps }) => {
           </ProductDisplaySizeList>
         </ProductDisplaySize>
 
-        <button>Adicionar ao carrinho</button>
+        <button onClick={() => addToCart(product.id)}>
+          Adicionar ao carrinho
+        </button>
 
         <ProductDisplayDescription>
           O Speedo LZR Pure Intent foi feito para atletas que buscam o máximo de

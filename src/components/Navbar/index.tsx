@@ -6,12 +6,19 @@ import {
   NavLogo,
   NavMenu,
 } from "./styles";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
+import { ShopContext } from "../../context/ShopContext";
 
 export const Navbar = () => {
   const [menu, setMenu] = useState("home");
+
+  const context = useContext(ShopContext);
+
+  if (!context) return null;
+
+  const { getTotalCartItems } = context;
 
   return (
     <NavContainer>
@@ -46,7 +53,7 @@ export const Navbar = () => {
           <ShoppingCartOutlined sx={{ color: "#171717" }} />
         </Link>
 
-        <NavCartCount>0</NavCartCount>
+        <NavCartCount>{getTotalCartItems()}</NavCartCount>
       </NavLoginCart>
     </NavContainer>
   );
