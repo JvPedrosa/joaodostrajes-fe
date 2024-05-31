@@ -16,7 +16,7 @@ export const Item = ({ item }: { item: ItemProps }) => {
           onClick={() => window.scrollTo(0, 0)}
           alt="Item"
         />
-        <p>{item.name}</p>
+        <p className="title">{item.name}</p>
         <ItemPrices>
           <ItemPriceNew>
             <p>R$ {item.new_price}</p>

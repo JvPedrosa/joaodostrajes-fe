@@ -1,16 +1,15 @@
 import styled from "styled-components";
 
 export const ItemContainer = styled.div`
-  height: 100%;
+  width: 280px;
+  font-size: 18px;
 
-  p {
-    margin: 8px 0;
+  .title {
+    margin: 4px 0 2px 0;
   }
 
   img {
-    width: 256px;
-    height: 256px;
-    object-fit: cover;
+    width: 100%;
     border-radius: 10px;
     box-shadow: 0 1px 3px -2px black;
     transition: transform 0.2s;
@@ -20,6 +19,26 @@ export const ItemContainer = styled.div`
   :hover {
     transform: scale(1.05);
     transition: transform 0.2s;
+  }
+
+  @media (max-width: 1280px) {
+    width: 220px;
+    font-size: 14px;
+  }
+
+  @media (max-width: 1024px) {
+    width: 170px;
+    font-size: 13px;
+  }
+
+  @media (max-width: 800px) {
+    width: 120px;
+    font-size: 12px;
+  }
+
+  @media (max-width: 550px) {
+    width: 160px;
+    font-size: 11px;
   }
 `;
 
@@ -32,6 +51,18 @@ export const ItemPriceNew = styled.div`
   color: #374151;
   font-size: 16px;
   font-weight: 600;
+
+  @media (max-width: 1280px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 13px;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 12px;
+  }
 `;
 
 export const ItemPriceOld = styled.div`
@@ -39,4 +70,16 @@ export const ItemPriceOld = styled.div`
   font-size: 16px;
   font-weight: 500;
   text-decoration: line-through;
+
+  @media (max-width: 1280px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 13px;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 12px;
+  }
 `;

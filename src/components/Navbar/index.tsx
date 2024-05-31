@@ -1,4 +1,9 @@
-import { ShoppingCartOutlined } from "@mui/icons-material";
+import {
+  KeyboardArrowDown,
+  KeyboardArrowDownOutlined,
+  KeyboardArrowUp,
+  ShoppingCartOutlined,
+} from "@mui/icons-material";
 import {
   NavCartCount,
   NavContainer,
@@ -6,19 +11,28 @@ import {
   NavLogo,
   NavMenu,
 } from "./styles";
-import { useContext, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import { ShopContext } from "../../context/ShopContext";
 
 export const Navbar = () => {
   const [menu, setMenu] = useState("home");
+  const menuRef = useRef<HTMLUListElement>(null);
+  const [openMenu, setOpenMenu] = useState(false);
 
   const context = useContext(ShopContext);
 
   if (!context) return null;
 
   const { getTotalCartItems } = context;
+
+  const dropdownToggle = () => {
+    if (menuRef.current) {
+      menuRef.current.classList.toggle("nav-menu-visible");
+      setOpenMenu(!openMenu);
+    }
+  };
 
   return (
     <NavContainer>
@@ -29,7 +43,13 @@ export const Navbar = () => {
         </NavLogo>
       </Link>
 
-      <NavMenu>
+      {openMenu ? (
+        <KeyboardArrowUp className="nav-dropdown" onClick={dropdownToggle} />
+      ) : (
+        <KeyboardArrowDown className="nav-dropdown" onClick={dropdownToggle} />
+      )}
+
+      <NavMenu ref={menuRef} className="nav-menu">
         <li onClick={() => setMenu("home")}>
           <Link to="/">Página Inicial</Link>
           {menu === "home" && <hr />}
