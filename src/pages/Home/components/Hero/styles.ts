@@ -172,9 +172,9 @@ export const HeroRight = styled.div`
     @media (max-width: 800px) {
       height: 70%;
     }
+  }
 
-    @media (max-width: 550px) {
-      display: none;
-    }
+  @media (max-width: 550px) {
+    display: none;
   }
 `;
