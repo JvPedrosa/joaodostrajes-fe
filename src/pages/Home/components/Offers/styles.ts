@@ -141,18 +141,38 @@ export const OffersRight = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   padding-top: 48px;
 
   img {
-    height: 100%;
+    width: 150px;
+    height: auto;
+    object-fit: cover;
   }
 
   @media (max-width: 1280px) {
     padding-top: 30px;
+    img {
+      width: 140px;
+    }
   }
 
   @media (max-width: 1024px) {
     padding-top: 10px;
+    img {
+      width: 100px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    img {
+      width: 80px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    img {
+      width: 50px;
+    }
   }
 `;
