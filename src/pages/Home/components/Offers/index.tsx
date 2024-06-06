@@ -5,10 +5,7 @@ export const Offers = () => {
   return (
     <OffersContainer>
       <OffersLeft>
-        <h1>
-          Ofertas
-          <br /> Exclusivas para você
-        </h1>
+        <h1>Ofertas Exclusivas para você</h1>
         <p>Os melhores trajes</p>
         <button>Veja agora</button>
       </OffersLeft>
