@@ -4,9 +4,8 @@ export const OffersContainer = styled.div`
   display: flex;
   width: 65%;
   height: 60vh;
-  margin: auto;
   padding: 0 144px;
-  margin-bottom: 152px;
+  margin: 152px auto;
   background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
   border-radius: 48px;
 
