@@ -27,6 +27,14 @@ export const OffersContainer = styled.div`
   @media (max-width: 500px) {
     height: 25vh;
     margin: 50px auto;
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
+    justify-content: space-around;
+
+    > div {
+      flex: 0;
+    }
   }
 `;
 
