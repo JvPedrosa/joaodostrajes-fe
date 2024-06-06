@@ -9,6 +9,26 @@ export const OffersContainer = styled.div`
   margin-bottom: 152px;
   background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
   border-radius: 48px;
+
+  @media (max-width: 1280px) {
+    padding: 0 80px;
+    margin: 120px auto;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 0 60px;
+    margin: 80px auto;
+    height: 40vh;
+  }
+
+  @media (max-width: 800px) {
+    margin: 60px auto;
+  }
+
+  @media (max-width: 500px) {
+    height: 25vh;
+    margin: 50px auto;
+  }
 `;
 
 export const OffersLeft = styled.div`
@@ -43,6 +63,71 @@ export const OffersLeft = styled.div`
     margin-top: 32px;
     cursor: pointer;
   }
+
+  @media (max-width: 1280px) {
+    h1 {
+      font-size: 40px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    button {
+      width: 220px;
+      height: 50px;
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    h1 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    button {
+      width: 160px;
+      height: 40px;
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    h1 {
+      font-size: 22px;
+    }
+
+    p {
+      font-size: 13px;
+    }
+
+    button {
+      width: 140px;
+      height: 30px;
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 10px;
+    }
+
+    button {
+      width: 120px;
+      height: 25px;
+      font-size: 10px;
+      margin-top: 10px;
+    }
+  }
 `;
 
 export const OffersRight = styled.div`
@@ -54,5 +139,13 @@ export const OffersRight = styled.div`
 
   img {
     height: 100%;
+  }
+
+  @media (max-width: 1280px) {
+    padding-top: 30px;
+  }
+
+  @media (max-width: 1024px) {
+    padding-top: 10px;
   }
 `;
