@@ -20,8 +20,6 @@ export const PopularContainer = styled.div`
   }
 
   @media (max-width: 1280px) {
-    height: 50vh;
-
     h1 {
       font-size: 40px;
     }
@@ -33,8 +31,6 @@ export const PopularContainer = styled.div`
   }
 
   @media (max-width: 1024px) {
-    height: 40vh;
-
     h1 {
       font-size: 30px;
     }
@@ -46,7 +42,6 @@ export const PopularContainer = styled.div`
   }
 
   @media (max-width: 800px) {
-    height: 30vh;
     gap: 6px;
 
     h1 {
@@ -56,10 +51,6 @@ export const PopularContainer = styled.div`
     hr {
       width: 100px;
     }
-  }
-
-  @media (max-width: 550px) {
-    height: 55vh;
   }
 `;
 
