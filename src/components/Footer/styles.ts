@@ -7,6 +7,10 @@ export const FooterContainer = styled.footer`
   align-items: center;
   gap: 16px;
   padding: 32px 0;
+
+  @media (max-width: 800px) {
+    gap: 20px;
+  }
 `;
 
 export const FooterLinks = styled.div`
@@ -17,6 +21,17 @@ export const FooterLinks = styled.div`
     svg {
       height: 32px;
       width: 32px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    gap: 10px;
+
+    a {
+      svg {
+        height: 22px;
+        width: 22px;
+      }
     }
   }
 `;
@@ -43,5 +58,9 @@ export const FooterCopyright = styled.div`
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 13px;
   }
 `;
