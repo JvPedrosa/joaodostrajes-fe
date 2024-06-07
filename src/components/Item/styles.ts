@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ItemContainer = styled.div`
-  width: 280px;
   font-size: 18px;
 
   .title {
@@ -22,22 +21,18 @@ export const ItemContainer = styled.div`
   }
 
   @media (max-width: 1280px) {
-    width: 220px;
     font-size: 14px;
   }
 
   @media (max-width: 1024px) {
-    width: 170px;
     font-size: 13px;
   }
 
   @media (max-width: 800px) {
-    width: 120px;
     font-size: 12px;
   }
 
   @media (max-width: 550px) {
-    width: 160px;
     font-size: 11px;
   }
 `;
