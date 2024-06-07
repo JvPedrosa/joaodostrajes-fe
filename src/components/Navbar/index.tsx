@@ -1,6 +1,5 @@
 import {
   KeyboardArrowDown,
-  KeyboardArrowDownOutlined,
   KeyboardArrowUp,
   ShoppingCartOutlined,
 } from "@mui/icons-material";
@@ -11,8 +10,8 @@ import {
   NavLogo,
   NavMenu,
 } from "./styles";
-import { useContext, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { useContext, useRef, useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import { ShopContext } from "../../context/ShopContext";
 
@@ -20,8 +19,16 @@ export const Navbar = () => {
   const [menu, setMenu] = useState("home");
   const menuRef = useRef<HTMLUListElement>(null);
   const [openMenu, setOpenMenu] = useState(false);
+  const location = useLocation();
 
   const context = useContext(ShopContext);
+
+  useEffect(() => {
+    if (menuRef.current) {
+      menuRef.current.classList.remove("nav-menu-visible");
+      setOpenMenu(false);
+    }
+  }, [location]);
 
   if (!context) return null;
 
