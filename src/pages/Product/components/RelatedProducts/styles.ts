@@ -30,4 +30,17 @@ export const RelatedProductsItem = styled.div`
   img {
     width: 196px;
   }
+
+  @media (max-width: 1024px) {
+    width: 90%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 800px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;

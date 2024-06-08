@@ -31,6 +31,10 @@ export const DescriptionBoxNavBox = styled.div`
     border-radius: 0 8px 0 0;
     border-left: none;
   }
+
+  @media (max-width: 800px) {
+    font-size: 13px;
+  }
 `;
 
 export const DescriptionBoxDescription = styled.div`
@@ -40,4 +44,8 @@ export const DescriptionBoxDescription = styled.div`
   border: 1px solid #d0d0d0;
   padding: 32px 24px;
   border-radius: 0 8px 8px 8px;
+
+  @media (max-width: 800px) {
+    font-size: 13px;
+  }
 `;
