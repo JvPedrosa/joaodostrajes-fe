@@ -5,6 +5,14 @@ export const LoginSignupPage = styled.div`
   height: 80vh;
   background-color: #fce3fe;
   padding-top: 100px;
+
+  @media (max-width: 1280px) {
+    padding-top: 50px;
+  }
+
+  @media (max-width: 800px) {
+    padding: 20px 30px;
+  }
 `;
 
 export const LoginSignupContainer = styled.div`
@@ -13,7 +21,7 @@ export const LoginSignupContainer = styled.div`
   background-color: #ffffff;
   margin: auto;
   padding: 40px 60px;
-  border-radius: 8px;
+  border-radius: 16px;
 
   h1 {
     margin: 20px 0;
@@ -33,6 +41,32 @@ export const LoginSignupContainer = styled.div`
     display: flex;
     justify-content: center;
   }
+
+  @media (max-width: 1280px) {
+    width: auto;
+    max-height: 500px;
+    max-width: 500px;
+
+    h1 {
+      margin: 10px 0;
+    }
+
+    button {
+      width: 98%;
+      height: 65px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    h1 {
+      font-size: 24px;
+    }
+
+    button {
+      height: 50px;
+      font-size: 16px;
+    }
+  }
 `;
 
 export const LoginSignupFields = styled.div`
@@ -49,6 +83,23 @@ export const LoginSignupFields = styled.div`
     outline: none;
     color: #5c5c5c;
     font-size: 18px;
+  }
+
+  @media (max-width: 1280px) {
+    gap: 20px;
+    margin-top: 20px;
+
+    input {
+      height: 65px;
+      width: 93%;
+    }
+  }
+
+  @media (max-width: 800px) {
+    gap: 16px;
+    input {
+      height: 50px;
+    }
   }
 `;
 
@@ -69,6 +120,10 @@ export const LoginSignupLogin = styled.div`
       font-weight: 700;
     }
   }
+
+  @media (max-width: 1280px) {
+    font-size: 16px;
+  }
 `;
 
 export const LoginSignupAgree = styled.div`
@@ -85,5 +140,10 @@ export const LoginSignupAgree = styled.div`
     height: 16px;
     accent-color: #ff4141;
     cursor: pointer;
+  }
+
+  @media (max-width: 1280px) {
+    font-size: 14px;
+    gap: 10px;
   }
 `;
